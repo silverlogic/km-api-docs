@@ -204,7 +204,7 @@ All of the parent mobile devices that you own.
     "first_name": "Lady",
     "last_name": "Bug",
     "avatar_url": "https://s3.amazon.com/lady-bug.png",
-    "global_blocked_feature_list": [2]
+    "blocked_mobile_feature_list": [2]
 }
 ```
 
@@ -215,7 +215,7 @@ email | string | Will be used to login later but kids can't login right now.  Un
 first_name | string
 last_name | string
 avatar_url | string
-global_blocked_feature_list | array[integer] | The [Features](#feature-enum) that are blocked no matter what.
+blocked_mobile_feature_list | array[integer] | The [Features](#feature-enum) that are blocked no matter what.
 
 
 ## Create a kid
@@ -235,7 +235,8 @@ Create a new kid.  Returns a Kid object.
     "email": "ladybug@gmail.com",
     "first_name": "Lady",
     "last_name": "Bug",
-    "avatar": "base64shit"
+    "avatar": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA B3RJTUUH3wYXDjQBq4FwtwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUH AAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC",
+    "blocked_mobile_feature_list": [1]
 }
 ```
 
@@ -244,7 +245,8 @@ Name | Type | Description
 email | string | **Required.**
 first_name | string | **Required.**
 last_name | string | **Required.**
-avatar | string
+avatar | string | base64 encoded image
+blocked_mobile_feature_list | array[integer]
 
 ### Back End Notes
 
